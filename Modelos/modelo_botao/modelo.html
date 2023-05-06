@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Botão</title>
+    <style>
+        .switch {
+            position: absolute;
+            margin-left: -9999px;
+            visibility: hidden;
+        }
+
+        .switch+label {
+            display: block;
+            position: relative;
+            cursor: pointer;
+            outline: none;
+            user-select: none;
+        }
+
+        .switch--shadow+label {
+            padding: 2px;
+            width: 120px;
+            height: 60px;
+            background-color: #dddddd;
+            border-radius: 60px;
+        }
+
+        .switch--shadow+label:before,
+        .switch--shadow+label:after {
+            display: block;
+            position: absolute;
+            top: 1px;
+            left: 1px;
+            bottom: 1px;
+            content: '';
+        }
+
+        .switch--shadow+label:before {
+            right: 1px;
+            background-color: #f1f1f1;
+            border-radius: 60px;
+            transition: all 0.9s;
+        }
+
+        .switch--shadow+label:after {
+            width: 62px;
+            background-color: #fff;
+            border-radius: 100%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            transition: all 0.9s;
+        }
+
+        .switch--shadow:checked+label:before {
+            background-color: #8ce196;
+        }
+
+        .switch--shadow:checked+label:after {
+            transform: translateX(60px);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Modelo de Botão</h1>
+    </header>
+
+    <section>
+        <div>
+            <div class="switch__container">
+                <input id="switch-shadow" class="switch switch--shadow" type="checkbox" onclick="teste"/>
+                <label for="switch-shadow"></label>
+            </div>
+
+            <div>
+
+            </div>
+    </section>
+
+    <footer>
+    </footer>
+    <script>
+        //JavaScript
+    </script>
+</body>
+
+</html>

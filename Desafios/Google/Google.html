@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Google - Pesquisar</title>
+	<style type="text/css">
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: #ffffff;
+			font-family: Arial, sans-serif;
+		}
+		.container {
+			margin: 0 auto;
+			max-width: 800px;
+			padding: 20px;
+		}
+		.logo {
+			display: block;
+			margin: 0 auto;
+			max-width: 272px;
+			padding-top: 109px;
+		}
+		.form {
+			display: flex;
+			flex-direction: column;
+			margin-top: 60px;
+		}
+		.form input[type="text"] {
+			padding: 14px 16px;
+			font-size: 16px;
+			border: none;
+			border-radius: 10px;
+			box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+			margin-bottom: 20px;
+		}
+		.form input[type="submit"] {
+			background-color: #1a73e8;
+			color: white;
+			padding: 14px 16px;
+			font-size: 16px;
+			border: none;
+			border-radius: 10px;
+			box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+			cursor: pointer;
+			transition: background-color 0.2s ease;
+		}
+		.form input[type="submit"]:hover {
+			background-color: #0d47a1;
+		}
+		.footer {
+			margin-top: 80px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			font-size: 14px;
+			color: #5f6368;
+			border-top: 1px solid #dadce0;
+			padding: 15px 0;
+		}
+		.footer a {
+			color: #5f6368;
+			text-decoration: none;
+			transition: color 0.2s ease;
+		}
+		.footer a:hover {
+			color: #202124;
+		}
+		#Pesquisa{
+			background-color: #acaaaa;
+			color: #000000;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<a href="#"><img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Google_logo_%282013-2015%29.svg"></a>
+		<form class="form" action="#" method="get">
+			<input type="text" name="q" id="Pesquisa" placeholder="Digite para Pesquisar">
+			<input type="submit" value="Pesquisa Google">
+		</form>
+		<div class="footer">
+			<p>Brasil</p>
+			<div>
+				<a href="#">Sobre</a>
+				<a href="#">Publicidade</a>
+				<a href="#">Negócios</a>
+				<a href="#">Como funciona
+                <a href="#">Privacidade</a>
+                <a href="#">Termos</a>
+                <a href="#">Configurações</a>
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>

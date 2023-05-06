@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tirando e salvando uma foto</title>
+  </head>
+  <body>
+    <video id="video" width="640" height="480" autoplay></video>
+    <button id="snap">Tirar Foto</button>
+    <canvas id="canvas" width="640" height="480"></canvas>
+    <script>
+      var video = document.getElementById("video");
+      var canvas = document.getElementById("canvas");
+      var snapButton = document.getElementById("snap");
+      var context = canvas.getContext("2d");
+
+      navigator.mediaDevices.getUserMedia({ video: true })
+        .then(function(stream) {
+          video.srcObject = stream;
+        })
+        .catch(function(err) {
+          console.log("Ocorreu um erro ao acessar a câmera: " + err);
+        });
+
+      snapButton.addEventListener("click", function() {
+        context.drawImage(video, 0, 0, canvas.width, canvas.height);
+        var dataURL = canvas.toDataURL("image/png");
+        download(dataURL, "minha-foto.png");
+      });
+
+      function download(dataURL, filename) {
+        var a = document.createElement("a");
+        a.href = dataURL;
+        a.download = filename;
+        document.body.appendChild(a);
+        a.click();
+      }
+    </script>
+  </body>
+</html>

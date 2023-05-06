@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analizador de Números</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <header>
+        <h1>Analizador de Números</h1>
+    </header>
+    <section>
+        <div id="calc" id="teste">
+            <form action="">
+                Número entre 1 e 100: <input type="text" id="fnum" required>
+                <input type="button" value="Adicionar" onclick="Adicionar()">
+            </form>
+
+        </div>
+    </section>
+    <br>
+    <section id="teste">
+        <div>
+            <select name="flista" style="width: 250px; height: 150px;" id="flista">
+                <option>Digite um número acima</option>
+            </select>
+            <br>
+            <input type="button" value="Finalizar" onclick="Finalizar()">
+            <br>
+            <p id="resultado"></p>
+        </div>
+    </section>
+
+    <footer>
+    <p>&copy; AndréCosta</p>
+    <button type="submit" aria-label="Modo Noturno" id="Darkmode" onclick="Darkmode()">
+    <img src="https://w7.pngwing.com/pngs/786/264/png-transparent-night-mode-icon-logo-moon-switch-on-off-digital.png" id="darkmode">
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Exercício</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <header>
+        <h1>Atividade</h1>
+    </header>
+
+    <section>
+        <div>
+            <input type="text" id="num" style="width: 330px; height: 30px;" placeholder="Digite aqui o seu número">
+            <br>
+            <input type="button" value="Adicionar ao Array" onclick="CalcularArray()">
+            <input type="button" value="Limpar Array" onclick="Clean()">
+            <input type="button" value="Exibir resultado" onclick="Resultado()">
+        </div>
+    </section>
+    <br>
+    <section>
+        <div id="resArray">
+            Aqui a sua resposta...
+        </div>
+        <div id="res"></div>
+    </section>
+
+    <footer>
+        <p>&copy; AndreCosta <br>
+            <button onclick="darkMode()">Theme</button></p>
+
+        <!-- <div class="switch__container">
+            <input id="switch-shadow" class="switch switch--shadow" type="checkbox" />
+            <label for="switch-shadow"></label>
+        </div> -->
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
