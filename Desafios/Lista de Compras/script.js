@@ -128,13 +128,9 @@ const ShowProdutcNames = (users) => {
         ${Formatter.format(list.Price)}
         <br>
         <hr style="width: 500px;">
-
         `)
 
         Calc++
-
-
-
 
     });
 }
