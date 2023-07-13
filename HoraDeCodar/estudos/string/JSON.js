@@ -16,10 +16,14 @@ console.log(pessoa.idade)
 
 
 
+console.log("-------------------")
+
 
 //Conversão de JSON em String, e vice-versa
 
-let cadastro = {
+// JSON -> String
+
+let cadastro1 = {
     "nome": "André",
     "idade": 20,
     "profissao":"Programador",
@@ -27,5 +31,23 @@ let cadastro = {
 }
 
 
-console.log(cadastro)
-console.log(JSON.stringify(cadastro))
+console.log(cadastro1)
+console.log(JSON.stringify(cadastro1))
+
+
+console.log("-------------------")
+
+
+
+// String -> JSON
+
+let cadastro2 = {
+    nome: 'André',
+    idade: 20,
+    profissao: 'Programador',
+    hobbies: [ 'Vídeo Game', 'Leitura', 'Correr' ]
+  }
+
+
+console.log(cadastro2)
+console.log(JSON.parse(cadastro2))
