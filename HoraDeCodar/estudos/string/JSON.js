@@ -41,13 +41,13 @@ console.log("-------------------")
 
 // String -> JSON
 
-let cadastro2 = {
-    nome: 'André',
-    idade: 20,
-    profissao: 'Programador',
-    hobbies: [ 'Vídeo Game', 'Leitura', 'Correr' ]
-  }
+// let cadastro2 = {
+//     nome: 'André',
+//     idade: 20,
+//     profissao: 'Programador',
+//     hobbies: [ 'Vídeo Game', 'Leitura', 'Correr' ]
+//   }
 
 
-console.log(cadastro2)
-console.log(JSON.parse(cadastro2))
+// console.log(cadastro2)
+// console.log(JSON.stringify(cadastro2),JSON.parse(cadastro2))
