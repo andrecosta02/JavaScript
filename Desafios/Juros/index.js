@@ -1,8 +1,13 @@
-let emprestimo = 1000
+let emprestimo = 1500
 let juros = 20
-let parcelas = 12
-let res 
+let parcelasQtd = 12
+let parcelasUnit
+let res = emprestimo
 
-res = (emprestimo * juros)
+console.log(`O valor solicitado foi R$${emprestimo}, será em ${parcelasQtd} parcelas, o juros é de ${juros}%.`)
 
-console.log(`O valor solicitado foi R$${emprestimo}, será em `)
+res += ((emprestimo * juros) / 100)
+
+parcelasQtd = res / 12
+
+console.log(`Cada parcela sairá por R$${parcelasQtd}`)
